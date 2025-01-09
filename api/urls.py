@@ -1,5 +1,8 @@
 from django.urls import path, include
 from api.views import MealList, MealDetail, RatingList, RatingDetail, MealDispatchAPIView
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 # Define the URL patterns for the API
 urlpatterns = [

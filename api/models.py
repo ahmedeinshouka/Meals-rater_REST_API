@@ -17,7 +17,7 @@ class Meal(models.Model):
     # A text field to store additional comments or feedback about the rating.
     description = models.TextField()
     # The 'upload_to' parameter specifies the subdirectory within the media root where the image will be stored.
-    image = models.ImageField(upload_to='meals/')
+    image = models.ImageField(upload_to='uploads/')
     # A date field to store the date when the meal was consumed.
     date = models.DateField()
     def __str__(self):
